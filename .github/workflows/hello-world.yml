@@ -19,3 +19,9 @@ jobs:
       
     - name: Print current directory
       run: pwd && ls -la
+HEAD
+
+      
+    - name: Show Git information
+      run: git log --oneline -n 3
+4724928 (Initial commit with GitHub Actions workflow)
