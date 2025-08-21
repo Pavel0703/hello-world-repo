@@ -1,27 +1,8 @@
-name: Hello World Workflow
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+name: Hello World
+'on': push
 jobs:
-  hello-world:
+  hello-job:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      
-    - name: Run Hello World
-      run: echo "Hello World from GitHub Actions!"
-      
-    - name: Print current directory
-      run: pwd && ls -la
-HEAD
-
-      
-    - name: Show Git information
-      run: git log --oneline -n 3
-4724928 (Initial commit with GitHub Actions workflow)
+      - name: Echo text
+        run: 'echo "Hello, world!"'
